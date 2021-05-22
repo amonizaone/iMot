@@ -3,11 +3,13 @@ import 'package:imot/pages/job_pending_page.dart';
 import 'package:imot/pages/login_page.dart';
 import 'package:imot/pages/my_job.dart';
 import 'package:imot/utilities/routes.dart';
-import 'package:provider/provider.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  Intl.defaultLocale = "th";
+  initializeDateFormatting();
   runApp(
     // MultiProvider(
     //   providers: [

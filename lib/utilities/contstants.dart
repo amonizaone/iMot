@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:imot/pages/home_page.dart';
+import 'package:intl/intl.dart';
 
 enum Page { screenDashboard, screenProfile, screenSearch }
 // enum Page { screenDashboard, screenProfile, screenSearch }
@@ -8,6 +9,7 @@ enum Page { screenDashboard, screenProfile, screenSearch }
 extension on Page {
   String get route => describeEnum(this);
 }
+
 // final Map<Page, Widget> _fragments = {
 //   Page.screenDashboard: DashboardPage(),
 //   Page.screenProfile: UserProfilePage(),

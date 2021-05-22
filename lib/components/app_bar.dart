@@ -33,6 +33,5 @@ class _FlexibleAppBarState extends State<FlexibleAppBar> {
         ),
       ),
     );
-    ;
   }
 }
