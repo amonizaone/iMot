@@ -1,112 +1,118 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:imot/models/shared/static.dart';
-import 'package:imot/pages/batter_info.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:imot/components/app_bar.dart';
+import 'package:imot/components/drawer_manu.dart';
+import 'package:imot/utilities/contstants.dart';
 
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
+// class HomePage extends StatefulWidget {
+//   HomePage({Key key}) : super(key: key);
 
-class _HomePageState extends State<HomePage> {
-  @override
-  void initState() {
-    super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-    ]);
-    // SystemChrome.setPreferredOrientations([
-    //   DeviceOrientation.portraitUp,
-    //   DeviceOrientation.portraitDown,
-    // ]);
-  }
+//   @override
+//   _HomePageState createState() => _HomePageState();
+// }
 
-  @override
-  dispose() {
-    // SystemChrome.setPreferredOrientations([
-    //   DeviceOrientation.portraitUp,
-    //   DeviceOrientation.portraitDown,
-    // ]);
-    super.dispose();
-  }
+// class _HomePageState extends State<HomePage> {
 
+class HomePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle flatButtonStyle = TextButton.styleFrom(
-      primary: Colors.black87,
-      minimumSize: Size(88, 36),
-      padding: EdgeInsets.symmetric(horizontal: 16.0),
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(2.0)),
+    final navigatorKey = GlobalObjectKey<NavigatorState>(context);
+    return WillPopScope(
+      onWillPop: () async {
+        if (navigatorKey.currentState.canPop()) {
+          navigatorKey.currentState.pop();
+          return false;
+        }
+
+        return true;
+      },
+      child: Scaffold(
+        appBar: FlexibleAppBar(),
+        drawer: DrawMenu(),
+        body: Container(
+          child: Column(
+            children: <Widget>[
+              Text('TT')
+              // Expanded(
+              //   child: Navigator(
+              //     key: navigatorKey,
+              //     initialRoute: Page.screenDashboard.route,
+              //     onGenerateRoute: (settings) {
+              //       final pageName = settings.name;
+
+              //       final page = AppConstants.fragments.keys.firstWhere(
+              //         (element) => describeEnum(element) == pageName,
+              //       );
+
+              //       return MaterialPageRoute(
+              //         settings: settings,
+              //         builder: (context) => AppConstants.fragments[page],
+              //       );
+              //     },
+              //   ),
+              // ),
+              // Container(
+              //   width: double.infinity,
+              //   height: 50.0,
+              //   padding: const EdgeInsets.symmetric(horizontal: 15.0),
+              //   color: Colors.indigo[400],
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //     crossAxisAlignment: CrossAxisAlignment.center,
+              //     children: <Widget>[
+              //       ElevatedButton(
+              //         onPressed: () => navigatorKey.currentState
+              //             .pushNamed(Page.screenDashboard.route),
+              //         child: Text('Dashboard'),
+              //       ),
+              //       ElevatedButton(
+              //         onPressed: () => navigatorKey.currentState
+              //             .pushNamed(Page.screenProfile.route),
+              //         child: Text('Profile'),
+              //       ),
+              //       ElevatedButton(
+              //         onPressed: () => navigatorKey.currentState
+              //             .pushNamed(Page.screenSearch.route),
+              //         child: Text('Search'),
+              //       ),
+              //     ],
+              //   ),
+              // ),
+            ],
+          ),
+        ),
       ),
     );
+  }
+}
 
-    return Scaffold(
-      // appBar: AppBar(
-      //   // title: Text(
-      //   //   'login',
-      //   // ),
-      //   actions: [],
-      // ),
-      body: Container(
-          color: AppSetting.loginBg,
-          child: Stack(
-            children: [
-              Align(
-                alignment: Alignment.topCenter,
-                child: Container(
-                  margin: EdgeInsets.only(top: 50),
-                  // width: 100,]
-                  // padding: EdgeInsets.all(10.0),
-                  // color: Colors.amberAccent,
-                  width: MediaQuery.of(context).size.width * 0.9,
-                  height: 100,
-                  child: Image.asset(
-                    'assets/images/iel-logo.png',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Column(
-                  children: [
-                    TextButton(
-                      style: flatButtonStyle,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => BatteryInfo()));
-                      },
-                      child: Text('Looks like a FlatButton'),
-                    )
-                  ],
-                ),
-              )
-            ],
-          )
-          // Column(
-          //   children: [
-          //     Container(
-          //       padding: EdgeInsets.all(10.0),
-          //       color: Colors.red,
-          //     )
-          //   ],
-          // )
-          // Center(
-          //   child: Row(
-          //     children: [
-          //       Text(
-          //         'User Name',
-          //       ),
-          //       Text(
-          //         'Password',
-          //       )
-          //     ],
-          //   ),
-          // ),
-          ),
+class UserProfilePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      child: Text(' screenProfile ...'),
+    );
+  }
+}
+
+class DashboardPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      child: Text(' screenDashboard ...'),
+    );
+  }
+}
+
+class SearchPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      child: Text(' screenSearch ...'),
     );
   }
 }
