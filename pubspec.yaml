@@ -33,6 +33,16 @@ dependencies:
   flutter_hooks: ^0.17.0
   intl: ^0.17.0
   flutter_svg: ^0.22.0
+  device_info: ^2.0.2
+  #battery: ^2.0.3
+  battery_plus: ^1.0.1
+  dio: ^4.0.0
+  workmanager: ^0.4.0
+  shared_preferences: ^2.0.6
+  path_provider: ^2.0.2
+  flutter_local_notifications: ^6.0.0
+  http: ^0.13.3
+  rxdart: ^0.27.1
   # battery_info: ^1.0.7
 
 dev_dependencies:

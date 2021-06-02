@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:imot/pages/info_page.dart';
+import 'package:imot/pages/notify_page.dart';
+import 'package:imot/pages/worker_management_page.dart';
 import 'package:imot/utilities/routes.dart';
 
 class DrawMenu extends StatelessWidget {
@@ -53,6 +56,78 @@ class DrawMenu extends StatelessWidget {
                 Navigator.pushReplacementNamed(context, Routes.jobs),
               },
             ),
+            ListTile(
+              leading: Icon(
+                Icons.system_update_tv,
+                size: 40,
+                color: Colors.black54,
+              ),
+              title: Text(
+                'ข้อมูลเครือง',
+                style: TextStyle(
+                  color: Colors.black54,
+                  letterSpacing: 1.2,
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              onTap: () => {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => InfoPage(),
+                  ),
+                ),
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.system_update_tv,
+                size: 40,
+                color: Colors.black54,
+              ),
+              title: Text(
+                'Worker',
+                style: TextStyle(
+                  color: Colors.black54,
+                  letterSpacing: 1.2,
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              onTap: () => {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WorkerMagementPage(),
+                  ),
+                ),
+              },
+            ),
+            // ListTile(
+            //   leading: Icon(
+            //     Icons.system_update_tv,
+            //     size: 40,
+            //     color: Colors.black54,
+            //   ),
+            //   title: Text(
+            //     'การแจ้งเตือน',
+            //     style: TextStyle(
+            //       color: Colors.black54,
+            //       letterSpacing: 1.2,
+            //       fontFamily: 'OpenSans',
+            //       fontWeight: FontWeight.bold,
+            //     ),
+            //   ),
+            //   onTap: () => {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(
+            //         builder: (context) => NotifyPage(),
+            //       ),
+            //     ),
+            //   },
+            // ),
           ],
         ),
       ),

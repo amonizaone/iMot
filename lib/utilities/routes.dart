@@ -1,3 +1,4 @@
+import 'package:imot/pages/info_page.dart';
 import 'package:imot/pages/job_pending_page.dart';
 import 'package:imot/pages/my_job.dart';
 
@@ -7,4 +8,5 @@ class Routes {
   // static const String notes = NotesPage.routeName;
   static const String jobs = MyJob.routeName;
   static const String jobsPending = JobPendingPage.routeName;
+  // static const String systemInfo = InfoPage.routeName;
 }
