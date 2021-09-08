@@ -22,29 +22,38 @@ class AppConstants {
     Page.screenProfile: UserProfilePage(),
     Page.screenSearch: SearchPage(),
   };
+
+  static const String BASE_URL =
+      "http://api-mobile.interexpress.co.th/imot-api/v1";
 }
 
 final kHintTextStyle = TextStyle(
-  color: Colors.white54,
+  color: Colors.grey[350],
   fontFamily: 'OpenSans',
 );
 
 final kLabelStyle = TextStyle(
-  color: Colors.white,
+  color: Colors.grey,
   fontWeight: FontWeight.bold,
   fontFamily: 'OpenSans',
 );
 
 final kBoxDecorationStyle = BoxDecoration(
-  color: Color(0xFF6CA8F1),
+  // color: Color(0xFF6CA8F1),
+  // color: Colors.grey[],
+  // color: Colors.grey[400],
   borderRadius: BorderRadius.circular(10.0),
-  boxShadow: [
-    BoxShadow(
-      color: Colors.black12,
-      blurRadius: 6.0,
-      offset: Offset(0, 2),
-    ),
-  ],
+  border: Border.all(
+    width: 1,
+    color: Colors.grey,
+  ),
+  // boxShadow: [
+  //   BoxShadow(
+  //     color: Colors.black12,
+  //     blurRadius: 6.0,
+  //     offset: Offset(0, 2),
+  //   ),
+  // ],
 );
 
 final ButtonStyle flatButtonStyle = TextButton.styleFrom(

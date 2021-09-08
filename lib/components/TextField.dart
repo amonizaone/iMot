@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:imot/utilities/contstants.dart';
 
 class TextFieldBuild extends StatelessWidget {
-  final String hintText;
-  final Widget prefixIcon;
-  final TextInputType inputType;
-  final bool scureText;
-  final int maxLength;
-  final String labelText;
+  final TextEditingController? input;
+  final String? hintText;
+  final Widget? prefixIcon;
+  final TextInputType? inputType;
+  final bool? scureText;
+  final int? maxLength;
+  final String? labelText;
   const TextFieldBuild(
-      {Key key,
+      {Key? key,
+      this.input,
       this.labelText,
       this.maxLength,
       this.scureText = false,
@@ -25,17 +27,21 @@ class TextFieldBuild extends StatelessWidget {
       decoration: kBoxDecorationStyle,
       height: 60.0,
       child: TextField(
+        controller: input,
         textAlign: TextAlign.left,
         maxLength: maxLength,
-        obscureText: this.scureText,
+        obscureText: this.scureText ?? false,
         keyboardType: this.inputType ?? TextInputType.text,
         style: TextStyle(
-          color: Colors.white,
+          color: Colors.black,
         ),
         decoration: InputDecoration(
           border: InputBorder.none,
           contentPadding: EdgeInsets.only(
             top: 14.0,
+          ),
+          errorStyle: TextStyle(
+            color: Colors.red,
           ),
           prefixIcon: this.prefixIcon,
           // labelStyle: ,

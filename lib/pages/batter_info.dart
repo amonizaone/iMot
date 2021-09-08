@@ -9,7 +9,7 @@
 // // import 'package:battery_info/model/iso_battery_info.dart';
 
 // class BatteryInfo extends StatefulWidget {
-//   BatteryInfo({Key key}) : super(key: key);
+//   BatteryInfo({Key? key}) : super(key: key);
 
 //   @override
 //   _BatteryInfoState createState() => _BatteryInfoState();

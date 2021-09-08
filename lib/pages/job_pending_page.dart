@@ -8,7 +8,7 @@ import 'package:imot/components/page_title.dart';
 class JobPendingPage extends StatefulWidget {
   static const String routeName = '/job-pending';
 
-  JobPendingPage({Key key}) : super(key: key);
+  JobPendingPage({Key? key}) : super(key: key);
 
   @override
   _JobPendingPageState createState() => _JobPendingPageState();

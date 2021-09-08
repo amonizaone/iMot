@@ -10,7 +10,7 @@ import 'package:battery_plus/battery_plus.dart';
 import 'package:device_info/device_info.dart';
 
 class InfoPage extends StatefulWidget {
-  InfoPage({Key key}) : super(key: key);
+  InfoPage({Key? key}) : super(key: key);
 
   @override
   _InfoPageState createState() => _InfoPageState();
@@ -20,10 +20,10 @@ class _InfoPageState extends State<InfoPage> {
   // static const String routeName = '/system-info';
   final Battery _battery = Battery();
   static final DeviceInfoPlugin deviceInfoPlugin = DeviceInfoPlugin();
-  Map<String, dynamic> _deviceData;
+  late Map<String, dynamic> _deviceData;
 
-  BatteryState _batteryState;
-  StreamSubscription<BatteryState> _batteryStateSubscription;
+  late BatteryState _batteryState;
+  late StreamSubscription<BatteryState> _batteryStateSubscription;
 
   Future<void> initPlatformState() async {
     Map<String, dynamic> deviceData = <String, dynamic>{};
@@ -176,7 +176,7 @@ class _InfoPageState extends State<InfoPage> {
   void dispose() {
     super.dispose();
     if (_batteryStateSubscription != null) {
-      _batteryStateSubscription?.cancel();
+      _batteryStateSubscription.cancel();
     }
   }
 }

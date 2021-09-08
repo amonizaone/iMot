@@ -9,7 +9,7 @@ import 'package:intl/intl.dart';
 class MyJob extends StatefulWidget {
   static const String routeName = '/job';
 
-  MyJob({Key key}) : super(key: key);
+  MyJob({Key? key}) : super(key: key);
 
   @override
   _MyJobState createState() => _MyJobState();
@@ -24,7 +24,7 @@ class _MyJobState extends State<MyJob> {
     Tab(text: 'รายละเอียด'),
   ];
   List<Widget> _generalWidgets = [];
-  TabController _tabController;
+  late TabController _tabController;
 
   @override
   void initState() {

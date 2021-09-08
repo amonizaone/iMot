@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class PageTitle extends StatelessWidget {
-  final String imagePath;
+  final String? imagePath;
   final String title;
   final bool useAsset;
-  const PageTitle({Key key, this.title, this.imagePath, this.useAsset = false})
+  const PageTitle(
+      {Key? key, required this.title, this.imagePath, this.useAsset = false})
       : super(key: key);
 
   @override
@@ -21,11 +22,11 @@ class PageTitle extends StatelessWidget {
               WidgetSpan(
                   child: !this.useAsset
                       ? Image.asset(
-                          this.imagePath,
+                          this.imagePath!,
                           fit: BoxFit.cover,
                           scale: 2,
                         )
-                      : SvgPicture.asset(this.imagePath)
+                      : SvgPicture.asset(this.imagePath!)
                   // FaIcon(FontAwesomeIcons.truck),
                   ),
               WidgetSpan(child: SizedBox(width: 8)),

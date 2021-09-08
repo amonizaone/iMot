@@ -1,4 +1,4 @@
-package com.example.imot
+package com.mobile.interexpress.imot
 
 import io.flutter.embedding.android.FlutterActivity
 

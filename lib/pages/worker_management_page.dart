@@ -8,7 +8,7 @@ import 'package:workmanager/workmanager.dart';
 import 'package:path_provider/path_provider.dart';
 
 class WorkerMagementPage extends StatefulWidget {
-  WorkerMagementPage({Key key}) : super(key: key);
+  WorkerMagementPage({Key? key}) : super(key: key);
 
   @override
   _WorkerMagementPageState createState() => _WorkerMagementPageState();
@@ -20,9 +20,9 @@ class PlatformEnabledButton extends ElevatedButton {
   final _Platform platform;
 
   PlatformEnabledButton({
-    this.platform,
-    Widget child,
-    VoidCallback onPressed,
+    required this.platform,
+    required Widget child,
+    VoidCallback? onPressed,
   }) : super(
             child: child,
             onPressed: (Platform.isAndroid && platform == _Platform.android ||
@@ -57,7 +57,7 @@ void callbackDispatcher() {
       case Workmanager.iOSBackgroundTask:
         print("The iOS background fetch was triggered");
         Directory tempDir = await getTemporaryDirectory();
-        String tempPath = tempDir?.path;
+        String? tempPath = tempDir.path;
         print(
             "You can access other plugins in the background, for example Directory.getTemporaryDirectory(): $tempPath");
         break;
