@@ -3,14 +3,15 @@
   <channel>
     <title>For unit test only</title>
     <item>
-        <title>Version 2.0</title>
-        <description>desc Версия</description>
-        <pubDate>Sat, 26 Jul 2014 15:20:11 +0000</pubDate>
+        <title>Version 1.0.3</title>
+        <description>Fix bug data sync api</description>
+        <!--<pubDate>Sat, 26 Jul 2014 15:20:11 +0000</pubDate>-->
+        <pubDate>15/07/2022 12:15</pubDate>
         <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="2.0" />
         <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
     </item>
     <!-- The best chosen release -->
-    <item>
+    <!--<item>
         <title>Version 3.0</title>
         <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="3.0" sparkle:os="android" />
         <sparkle:deltas>
@@ -28,19 +29,19 @@
             type="application/octet-stream"
             sparkle:edSignature="..." />
         </sparkle:deltas>
-    </item>
+    </item>-->
     <!-- A release testing minimumSystemVersion -->
-    <item>
+    <!--<item>
         <title>Version 4.0</title>
         <pubDate>Sat, 26 Jul 2014 15:20:13 +0000</pubDate>
         <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="4.0" sparkle:os="iOS" />
         <sparkle:minimumSystemVersion>17.0.0</sparkle:minimumSystemVersion>
-    </item>
+    </item>-->
     <!-- A joke release testing maximumSystemVersion -->
-    <item>
+    <!--<item>
         <title>Version 5.0</title>
         <sparkle:version>5.0</sparkle:version>
         <sparkle:maximumSystemVersion>2.0.0</sparkle:maximumSystemVersion>
-    </item>
+    </item>-->
   </channel>
 </rss>
