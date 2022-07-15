@@ -3,11 +3,11 @@
   <channel>
     <title>For unit test only</title>
     <item>
-        <title>Version 1.0.3</title>
+        <title>Version 1.0.4</title>
         <description>Fix bug data sync api</description>
         <!--<pubDate>Sat, 26 Jul 2014 15:20:11 +0000</pubDate>-->
         <pubDate>15/07/2022 12:15</pubDate>
-        <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="2.0" />
+        <enclosure url="https://doc-14-7g-docs.googleusercontent.com/docs/securesc/6asuig4anvd1uonkp2lulp9qlarsbbso/os37ats62kls5727k0evqh469ulpgqq2/1657862400000/11779316726820735182/11779316726820735182/16MB8gweIasd7YJ3ba_0pS6V9RSvRt3NN?e=download&ax=ACxEAsYTffaBFtqUPIt7sDtQG1SapRILhFMmk7xSM-tVTqGlDTjDnLgjMBDfefpf253aHQx8aq2ifWO9Iqml0T3q8X9lXT9V2ADF5YUc3meHzXpSJQELBmyHyC6DEKFrWI67aPOyaMEsRmlyD3NT8Nacfc5wdQD-cTkfI2Iq9pJzFBl_QcpG8c2S8AgNFDcYLi3Z9WwBIYsZKYYDnv2KPuzP5WDwWEkReLbzk8MPyCkzJDmZSt9eWeNNYolaHs4mASAEYIj02xg5aoX0ofgkDdhVXIIasMLgMecWb_vWsyKACgNHcXl81Bug-wiBpRfyGciMP6EBKQfKTprYZcCoWkz6jWBdqC4cT1QtheeA7BI_J93rJm2LxccKBUrj121r2IeovQubbV67lSPrUp92Y1kbD_fIb3Ycmqci_3HDv0wFyPouNTw9asq6ly1EgiKnS3GYwj_tslHv_rkq8pT1eaaDO9Zwn-QXYXwed-0eZ-8GXa0pj48pvJlK0uE584E-W7TyNaBoBth0KjAPoSy2LQKnU_Ha2XJPUgwZ_0do9beliKNq5QDjUppGXhNojwYbJpfPy_pS1AjS7HPQ91Bzle-TwOyN5c5TBpwDIoz9kZ8OARVYQwMiSfLnOJs6CFIkWdJLA0Oxcw_KJKfF8E3GGo5bcFcQgUKcPMTT8KMynNIfopZx6Pmo-oS2emB0YA7k6lEBj9ipNC9e5d2QgZg8jHkHc1Qm5DFpQ76EGkPUGmoOdzypX7UZ-rI&uuid=499b1432-bd7a-4a67-b96f-5058c1d409aa&authuser=0&nonce=ugjallsr4uadu&user=11779316726820735182&hash=a4ph3h7slfilmrpvs4d51lk1aafarhu0" sparkle:version="1.0.4" />
         <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
     </item>
     <!-- The best chosen release -->
