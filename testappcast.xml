@@ -6,7 +6,7 @@
             <title>Version 1.1.2-uat</title>
             <description>Fix Page</description>
             <pubDate>2022-07-</pubDate>
-            <enclosure url="https://drive.google.com/file/d/1x2qk52CGaJ5FuVlrUCn4NhquuXJGSjA1/view?usp=sharing" sparkle:version="1.1.2-uat" />
+            <enclosure url="http://localhost:5000/v2/systems/version/imot/apk/app-uat-release.apk" sparkle:version="1.1.2-uat" />
             <sparkle:tags>
                 <sparkle:criticalUpdate />
             </sparkle:tags>
