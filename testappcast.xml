@@ -3,7 +3,7 @@
     <channel>
         <title>For unit test only</title>
         <item>
-            <title>Version 1.1.2-uat</title>
+            <title>Version 1.1.1-uat</title>
             <description>Fix Page</description>
             <pubDate>2022-07-</pubDate>
             <enclosure url="http://localhost:5000/v2/systems/version/imot/apk/app-uat-release.apk" sparkle:version="1.1.2-uat" />
