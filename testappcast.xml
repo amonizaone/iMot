@@ -3,10 +3,10 @@
     <channel>
         <title>For unit test only</title>
         <item>
-            <title>Version 1.1.2-uat</title>
+            <title>Version 1.1.3-uat</title>
             <description>Fix Page</description>
             <pubDate>2022-07-</pubDate>
-            <enclosure url="https://docs.google.com/uc?export=download&id=16MB8gweIasd7YJ3ba_0pS6V9RSvRt3NN" sparkle:version="1.1.2-uat" />
+            <enclosure url="https://docs.google.com/uc?export=download&id=16MB8gweIasd7YJ3ba_0pS6V9RSvRt3NN" sparkle:version="1.1.3-uat" />
             <sparkle:tags>
                 <sparkle:criticalUpdate />
             </sparkle:tags>
