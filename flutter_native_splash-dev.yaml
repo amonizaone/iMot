@@ -1,0 +1,42 @@
+flutter_native_splash: 
+  #color: '#0072BC'
+  color: '#ffffff'
+  #background_image: "assets/background.png"
+  image: 'assets/images/ielicon.png'
+  color_dark: "#121212"
+  image_dark: assets/images/ielicon.png
+  #branding_dark: assets/images/ielicon.png
+  #image_dark: assets/logo-development.png
+  #branding_dark: assets/branding-development.png
+
+
+  android: true
+  ios: true
+  web: false
+
+  android_gravity: center
+  #
+  # ios_content_mode can be one of the following iOS UIView.ContentMode (see
+  # https://developer.apple.com/documentation/uikit/uiview/contentmode): scaleToFill,
+  # scaleAspectFit, scaleAspectFill, center, top, bottom, left, right, topLeft, topRight,
+  # bottomLeft, or bottomRight.
+  ios_content_mode: center
+  #
+  # web_image_mode can be one of the following modes: center, contain, stretch, and cover.
+  #web_image_mode: center
+
+  # To hide the notification bar, use the fullscreen parameter.  Has no effect in web since web
+  # has no notification bar.  Defaults to false.
+  # NOTE: Unlike Android, iOS will not automatically show the notification bar when the app loads.
+  #       To show the notification bar, add the following code to your Flutter app:
+  #       WidgetsFlutterBinding.ensureInitialized();
+  #       SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom, SystemUiOverlay.top]);
+  # fullscreen: true
+
+  # If you have changed the name(s) of your info.plist file(s), you can specify the filename(s)
+  # with the info_plist_files parameter.  Remove only the # characters in the three lines below,
+  # do not remove any spaces:
+  #info_plist_files:
+  #  - 'ios/Runner/Info-Debug.plist'
+  #  - 'ios/Runner/Info-Release.plist'
+# flutter pub run flutter_native_splash:create --path=flutter_native_splash.yaml

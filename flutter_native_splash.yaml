@@ -1,0 +1,19 @@
+flutter_native_splash: 
+  #color: '#0072BC'
+  color: '#ffffff'
+  #background_image: "assets/background.png"
+  image: 'assets/images/ielicon.png'
+  color_dark: "#121212"
+  image_dark: assets/images/ielicon.png
+  #branding_dark: assets/images/ielicon.png
+  #image_dark: assets/logo-development.png
+  #branding_dark: assets/branding-development.png
+
+
+  android: true
+  ios: true
+  web: false
+
+  android_gravity: center 
+  ios_content_mode: center
+  

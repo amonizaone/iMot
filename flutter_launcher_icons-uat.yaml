@@ -1,0 +1,8 @@
+flutter_icons:
+  image_path: 'assets/launcher-icon/launcher-uat.png'
+  android: true
+  ios: true
+  windows:
+    generate: true
+    image_path: 'assets/launcher-icon/launcher-uat.png'
+    icon_size: 48 # min:48, max:256, default: 48

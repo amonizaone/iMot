@@ -1,0 +1,37 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  plugins:
+    - drift
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/generated_migrations/**"
+
+  errors:
+    #avoid_print: ignore  
+    avoid_print: false
+    #top_level_function_literal_block: ignore
+    #refer_single_quotes: true
+    avoid_classes_with_only_static_members: error
+    sort_pub_dependencies: error
+    use_key_in_widget_constructors: error
+    always_use_package_imports: error
+    sort_constructors_first: error
+    prefer_const_constructors: error
+
+linter:
+  rules:
+    avoid_classes_with_only_static_members: false
+    sort_pub_dependencies: false
+    use_key_in_widget_constructors: true
+    always_use_package_imports: true
+    prefer_const_constructors: true
+    # Conflicts with the convention used by flutter, which puts `Key key`
+    # and `@required Widget child` last.
+    always_put_required_named_parameters_first: false
+    package_api_docs: true
+    slash_for_doc_comments: true
+    sort_constructors_first: false
+    avoid_shadowing_type_parameters: false
+    await_only_futures: true
